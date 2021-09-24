@@ -5,3 +5,5 @@ export default {
     title: "CityInfo",
     component: CityInfo
 }
+
+export const CityExample = () => <CityInfo city={"Malaga"} country={"España"}></CityInfo>
