@@ -1,17 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Typography from '@material-ui/core/Typography'
+import React from "react";
+import PropTypes from "prop-types";
+import Typography from "@material-ui/core/Typography";
+import { WiCloud } from "react-icons/wi";
 
-const Weather = ({temperature}) => {
-    return (
-        <div>
-            <Typography variant="h2">{temperature} </Typography>
-        </div>
-    )
-}
+const Weather = ({ temperature }) => {
+  return (
+    <div>
+      <WiCloud></WiCloud>
+      <Typography variant="h2">{temperature} </Typography>
+    </div>
+  );
+};
 
 Weather.propTypes = {
-    temperature: PropTypes.number.isRequired
-}
+  temperature: PropTypes.number.isRequired,
+};
 
-export default Weather
+export default Weather;
