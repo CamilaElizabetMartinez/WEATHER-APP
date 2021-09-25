@@ -7,10 +7,11 @@ import {IconContext} from 'react-icons'
 const Weather = ({ temperature }) => {
   return (
     <div>
-      <IconContext.Provider value={{size:'4em'}}>
+      <IconContext.Provider value={{size:'5em'}}>
       <WiCloud></WiCloud>
       </IconContext.Provider>
-      <Typography variant="h2">{temperature} </Typography>
+      
+      <Typography display="inline" variant="h2">{temperature} </Typography>
     </div>
   );
 };
