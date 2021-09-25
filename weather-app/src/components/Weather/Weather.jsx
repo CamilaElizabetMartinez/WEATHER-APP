@@ -5,6 +5,7 @@ import { WiCloud,WiDayCloudy,WiDayFog,WiDaySunny,WiRain} from "react-icons/wi";
 import {IconContext} from 'react-icons'
 
 const Weather = ({ temperature, state}) => {
+  
   const stateByName = {
     cloud: WiCloud,
     cloudy: WiDayCloudy,
@@ -14,7 +15,7 @@ const Weather = ({ temperature, state}) => {
   }
 
   const renderState = state => {
-    const 
+    
   }
   return (
     <div>
