@@ -15,8 +15,10 @@ const Weather = ({ temperature, state}) => {
   }
 
   const renderState = state => {
-    
+    const IconState = stateByName[state]
+    return <IconState/>
   }
+
   return (
     <div>
       <IconContext.Provider value={{size:'5em'}}>
