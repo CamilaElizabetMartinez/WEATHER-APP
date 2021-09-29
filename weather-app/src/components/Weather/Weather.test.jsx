@@ -8,7 +8,7 @@ test("Weather render", async () => {
 
     //AAA Arrange Act Assert
 
-    const {findByRole} = render(<Weather temperature={10} ></Weather>)
+    const {findByRole} = render(<Weather temperature={10} state="sunny" ></Weather>)
 
     const Temp= await findByRole("heading")
 
