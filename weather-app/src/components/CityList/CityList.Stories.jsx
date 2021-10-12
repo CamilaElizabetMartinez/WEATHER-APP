@@ -1,8 +1,10 @@
 import React from 'react'
 import CityList from './CityList'
 
+
+
 export default{
-    titulo: "CityList",
+    title: "CityList",
     component: CityList
 }
 
