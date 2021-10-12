@@ -9,7 +9,7 @@ const renderCityAndCountry = (cityAndCountry) => {
   return (
     <li>
       <CityInfo city={city} country={country} />
-      <Weather temperature={10}/>
+      <Weather temperature={10} state="sunny"/>
     </li>
   );
 };
@@ -26,7 +26,7 @@ const CityList = ({ cities }) => {
 };
 
 CityList.propTypes = {
-  city: PropTypes.array.isRequired,
+  cities: PropTypes.array.isRequired,
 };
 
 export default CityList;
