@@ -15,11 +15,13 @@ const renderCityAndCountry = cityAndCountry => {
       > 
 
       <Grid item
-        sm={8}>
+        md={8}
+        xs={12}>
         <CityInfo city={city} country={country} />
       </Grid>
       <Grid item
-        sm={4}>
+        md={8}
+        xs={12}>
         <Weather temperature={10} state="sunny"/>
       </Grid>
       </Grid>
