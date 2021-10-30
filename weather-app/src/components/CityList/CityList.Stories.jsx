@@ -1,11 +1,16 @@
-import React from 'react'
-import CityList from './CityList'
+import React from 'react';
+import CityList from './CityList';   
 
-
-
-export default{
+export default {
     title: "CityList",
     component: CityList
 }
 
-export const CityListExample = () => <CityList cities={[]}/>
+const cities = [
+    {city:"Buenos Aires", country:"Argentina"},
+    {city:"Bogotá", country:"Colombia"},
+    {city:"París",  country:"Francia"},
+    {city:"Málaga", country:"España"},
+
+]
+export const CityListExample = () => <CityList cities={cities}/>
