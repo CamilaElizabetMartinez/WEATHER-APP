@@ -8,9 +8,12 @@ import Weather from "./../Weather";
 const renderCityAndCountry = cityAndCountry => {
   const { city, country } = cityAndCountry
   return (
-    <li key={city}>
-      <CityInfo city={city} country={country} />
-      <Weather temperature={10} state="sunny"/>
+    <li key={city}> 
+      <Grid container
+        justify="center"
+        alignItems="center"
+      > 
+      </Grid>
     </li>
   );
 };
