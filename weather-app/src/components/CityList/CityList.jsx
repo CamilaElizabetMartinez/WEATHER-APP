@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CityInfo from "../CityInfo/CityInfo";
-import Weather from "../Weather/Weather";
+import CityInfo from "./../CityInfo";
+import Weather from "./../Weather";
 
-const renderCityAndCountry = (cityAndCountry) => {
-  //li: es un item (segun tag html) 
-  const { city, country } = cityAndCountry;
+//li: es un item (segun tag html, tiene el role "listitem") 
+const renderCityAndCountry = cityAndCountry => {
+  const { city, country } = cityAndCountry
   return (
-    <li>
+    <li key={city}>
       <CityInfo city={city} country={country} />
       <Weather temperature={10} state="sunny"/>
     </li>
@@ -20,7 +20,7 @@ const renderCityAndCountry = (cityAndCountry) => {
 const CityList = ({ cities }) => {
   return (
     <ul>
-      {cities.map((cityAndContry) => renderCityAndCountry(cityAndContry))}
+      {cities.map(cityAndCountry => renderCityAndCountry(cityAndCountry))}
     </ul>
   );
 };
